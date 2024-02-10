@@ -104,6 +104,8 @@ const inputClosePin = document.querySelector('.form__input--pin');
 //   }
 // });
 
+//Map
+
 const currencies = new Map([
   ['USD', 'United States dollar'],
   ['EUR', 'Euro'],
@@ -115,7 +117,5 @@ currencies.forEach(function (value, key, map) {
 });
 
 // set
-
 const currenciesUnique = new Set(['USD', 'GBP', 'EUR', 'EUR']);
-
 console.log(currenciesUnique);
