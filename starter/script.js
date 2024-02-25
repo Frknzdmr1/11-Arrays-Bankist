@@ -119,3 +119,22 @@ const inputClosePin = document.querySelector('.form__input--pin');
 // // set
 // const currenciesUnique = new Set(['USD', 'GBP', 'EUR', 'EUR']);
 // console.log(currenciesUnique);
+
+// map
+
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+const eurToUsd = 1.1;
+
+const movementsUSD = movements.map(function (mov) {
+  return mov * eurToUsd;
+});
+// arrow function
+// const movementsUSDD = movements.map(mov => mov * eurToUsd);
+
+console.log(movements);
+console.log(movementsUSD);
+
+const movemenstsUSDfor = [];
+for (const mov of movements) movemenstsUSDfor.push(mov * eurToUsd);
+console.log(movemenstsUSDfor);
